@@ -12,6 +12,8 @@ import { Projects } from '@/sections/projects/Projects'
 import { useIsMobile } from "@/hooks/useIsMobile.ts";
 import { Navigation } from "@/sections/navigation/Navigation.tsx";
 import { navLinks, sectionIds } from "@/content/navigation.ts";
+import { Contact } from "@/sections/contact/Contact.tsx";
+import { contact } from "@/content/contact.ts";
 
 export default function App() {
   const isMobile = useIsMobile();
@@ -28,6 +30,7 @@ export default function App() {
         <Skills sectionId={ sectionIds.skills } skills={ skills } relations={ relations } categories={ skillCategories }
                 featuredSkillKey={ featuredSkill }/>
         <Projects sectionId={ sectionIds.projects } projects={ projects }/>
+        <Contact sectionId={ sectionIds.contact } contact={ contact }/>
       </main>
     </>
   )

@@ -2,6 +2,7 @@ export const sectionIds = {
   top: 'top',
   skills: 'skills',
   projects: 'projects',
+  contact: "contact"
 } as const
 
 export type NavLink = {
@@ -12,4 +13,5 @@ export type NavLink = {
 export const navLinks: readonly NavLink[] = [
   { anchor: sectionIds.skills, label: 'Skills' },
   { anchor: sectionIds.projects, label: 'Projects' },
+  { anchor: sectionIds.contact, label: 'Contact' },
 ]
