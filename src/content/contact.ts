@@ -43,7 +43,7 @@ export const contact: ContactInfo = {
       id: 'github',
       displayName: 'GitHub',
       callToAction: 'Browse my code on GitHub',
-      href: 'https://github.com/Pieter-Swillens',
+      href: 'https://github.com/PieterSwillens',
     },
   ],
   topics: ['Talking shop', 'Architecture & refactoring', 'Feedback on my projects', 'Meeting fellow developers'],

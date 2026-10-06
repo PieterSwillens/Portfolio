@@ -56,6 +56,6 @@ export const projects: readonly Project[] = [
     summary:
       'The site you are looking at: a React and TypeScript single page with CSS Modules, a canvas skills graph and a documented architecture.',
     features: ['React', 'TypeScript', 'CSS Modules', 'Canvas'],
-    repoUrl: 'https://github.com/Pieter-Swillens/portfolio',
+    repoUrl: 'https://github.com/PieterSwillens/portfolio',
   },
 ]
