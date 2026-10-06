@@ -14,6 +14,7 @@ import { Navigation } from "@/sections/navigation/Navigation.tsx";
 import { navLinks, sectionIds } from "@/content/navigation.ts";
 import { Contact } from "@/sections/contact/Contact.tsx";
 import { contact } from "@/content/contact.ts";
+import { Footer } from "@/sections/footer/Footer.tsx";
 
 export default function App() {
   const isMobile = useIsMobile();
@@ -24,7 +25,10 @@ export default function App() {
 
   return (
     <>
-      <Navigation links={ navLinks }/>
+      <nav>
+        <Navigation links={ navLinks }/>
+      </nav>
+
       <main>
         <Hero sectionId={ sectionIds.top } profile={ profile } particlesConfig={ particlesConfig }/>
         <Skills sectionId={ sectionIds.skills } skills={ skills } relations={ relations } categories={ skillCategories }
@@ -32,6 +36,10 @@ export default function App() {
         <Projects sectionId={ sectionIds.projects } projects={ projects }/>
         <Contact sectionId={ sectionIds.contact } contact={ contact }/>
       </main>
+
+      <footer>
+        <Footer name={ profile.name } topAnchor={ sectionIds.top }/>
+      </footer>
     </>
   )
 }
