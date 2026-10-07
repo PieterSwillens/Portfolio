@@ -8,9 +8,9 @@
     --color-text-muted: light-dark(#3f5f54, #9fc0b1);
     --color-border: light-dark(#c5d6cb, #1d4f3f);
     --color-accent: light-dark(#0b6b4d, #e6b84c);
-    --color-action: #e6b84c;
+    --color-action: light-dark(#0b6b4d, #e6b84c);
     --color-action-hover: color-mix(in srgb, var(--color-action), white 25%);
-    --color-on-action: #0a2a20;
+    --color-on-action: light-dark(#ffffff, #0a2a20);
 
     --color-category-core: var(--color-accent);
     --color-category-architecture: light-dark(#2f64c4, #7fa8ff);
